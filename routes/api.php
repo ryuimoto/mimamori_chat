@@ -17,4 +17,4 @@ use Illuminate\Http\Request;
 //     return $request->user();
 // });
 
-// Route::get('login/{device_id}');
+Route::get('login/{device_id}','Api\LoginController@login');
