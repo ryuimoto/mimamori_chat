@@ -15,10 +15,12 @@ class UsersTableSeeder extends Seeder
     {
        for ($i=0; $i < 100; $i++) { 
            dump($i);
+        
             User::create([
                 'name' => "test$i",
                 'email' => "test$i@gmail.com",
                 'password' => Hash::make('qqq111'),
+                'device_id' => "",
             ]);
        }
     }
