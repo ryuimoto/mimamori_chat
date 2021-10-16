@@ -15,7 +15,7 @@ class LoginController extends Controller
 {
     public function loginCheck($device_id){
         Log::debug($device_id);
-
+        
         $result = [];
 
         // $device_id = 'gerger';
